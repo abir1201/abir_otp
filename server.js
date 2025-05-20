@@ -14,7 +14,7 @@ app.get('/api/get-number', async (req, res) => {
   try {
     const response = await axios.get("https://api.sms-man.com/v1/user/buy/activation/1", {
       headers: {
-        'Authorization': Bearer ${SMSMAN_API_KEY}
+        'Authorization': Bearer +{SMSMAN_API_KEY}
       }
     });
     res.json(response.data);
@@ -27,9 +27,9 @@ app.get('/api/get-number', async (req, res) => {
 app.get('/api/get-sms/:activationId', async (req, res) => {
   try {
     const activationId = req.params.activationId;
-    const response = await axios.get(https://api.sms-man.com/v1/user/check/${activationId}, {
+    const response = await axios.get("https://api.sms-man.com/v1/user/check/${activationId"}, {
       headers: {
-        'Authorization': Bearer ${SMSMAN_API_KEY}
+        'Authorization': Bearer +{SMSMAN_API_KEY}
       }
     });
     res.json(response.data);
