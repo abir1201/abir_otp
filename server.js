@@ -12,7 +12,7 @@ app.use(express.json());
 // Get available number / buy activation
 app.get('/api/get-number', async (req, res) => {
   try {
-    const response = await axios.get(https://api.sms-man.com/v1/user/buy/activation/1, {
+    const response = await axios.get("https://api.sms-man.com/v1/user/buy/activation/1", {
       headers: {
         'Authorization': Bearer ${SMSMAN_API_KEY}
       }
