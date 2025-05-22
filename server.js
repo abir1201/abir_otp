@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const SMSMAN_API_KEY = '_NdYvaKcXXHw1s1Nfd7cib4OnWhmLZoO'; // Replace with your real API key
+const SMSMAN_API_KEY = '_NdYvaKcXXHw1s1Nfd7cib4OnWhmLZoO'; // Replace with your SMS-Man API key
 
 app.use(cors());
 app.use(express.json());
