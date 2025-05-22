@@ -18,6 +18,7 @@ document.getElementById('getNumberBtn').addEventListener('click', () => {
 
 document.getElementById('checkSMSBtn').addEventListener('click', () => {
   if(!activationId) return alert('No activation ID found');
+
   fetch(http://localhost:3000/api/get-sms/${activationId})
     .then(res => res.json())
     .then(data => {
